@@ -13,6 +13,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>techm</name>
 	<description>techm app</description>
+	 <!-- Packaging Type should be WAR for WAR generation -->
+    <packaging>war</packaging>
 	<url/>
 	<licenses>
 		<license/>
