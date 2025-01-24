@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Office Entry</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            background-color: #fff;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro-text {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .intro-text h2 {
+            font-size: 28px;
+            color: #003366;
+        }
+
+        .intro-text p {
+            font-size: 18px;
+            margin-top: 15px;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .btn-enter {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #005b99;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-enter:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Tech Mahindra Office</h1>
+        <p>Your professional destination starts here</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <div class="intro-text">
+            <h2>We Are Here to Help</h2>
+            <p>
+                Welcome to Tech Mahindra entry page! Whether you are here for a business meeting, an appointment, or to explore career opportunities, 
+                we are delighted to have you. Please feel free to get in touch with us through the options below.
+            </p>
+            <a href="#enter" class="btn-enter" th:href="@{/home}">Enter the Office</a> <!-- Updated href with Thymeleaf -->
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; <span th:text="${currentYear}">2025</span> Your Company Name. All rights reserved.</p> <!-- Display current year dynamically -->
+    </footer>
+
+</body>
+</html>
