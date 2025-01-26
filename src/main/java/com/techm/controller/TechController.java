@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class TechController {
 	
-	 @GetMapping("/test")
+	 @GetMapping("/main")
 	    public String getHome(Model model) {
 	        model.addAttribute("currentYear", java.time.Year.now().getValue());
 	        return "home"; 
